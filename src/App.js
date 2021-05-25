@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./components/Header"
 
 const App = () => {
-  return <p>initial commit</p>;
+  return (
+    <>
+      <Header title="Weather App" />
+    </>
+  )
 };
 
 export default App;
