@@ -24,7 +24,7 @@ const ImputForm = ({ search, setSearch, setConsulting }) => {
       setError(true);
       setTimeout(() => {
         setError(false);
-      }, 1500)
+      }, 1500);
       return;
     }
 
@@ -66,12 +66,8 @@ const ImputForm = ({ search, setSearch, setConsulting }) => {
         <label htmlFor="country">Country</label>
       </div>
 
-      <div className="input-field col s12">
-        <input
-          type="submit"
-          value="search weather"
-          className="waves-effect waves-light btn-large btn-block yellow accent-4"
-        ></input>
+      <div className="input-field col s12 search">
+        <input type="submit" value="search weather" className=" btn-large btn-block  waves-effect waves-light yellow accent-4"/>
       </div>
     </form>
   );
