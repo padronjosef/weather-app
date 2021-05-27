@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 const WeatherResult = ({ dataFetched }) => {
   // destructiring data
@@ -25,5 +26,9 @@ const WeatherResult = ({ dataFetched }) => {
     </div>
   );
 };
+
+WeatherResult.prototype = {
+  dataFetched: PropTypes.object.isRequired,
+}
 
 export default WeatherResult;

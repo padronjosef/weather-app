@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 const ImputForm = ({ search, setSearch, setConsulting }) => {
   const [error, setError] = useState(false);
@@ -72,5 +73,11 @@ const ImputForm = ({ search, setSearch, setConsulting }) => {
     </form>
   );
 };
+
+ImputForm.prototype = {
+  search: PropTypes.object.isRequired,
+  setSearch: PropTypes.func.isRequired,
+  setConsulting: PropTypes.func.isRequired,
+}
 
 export default ImputForm;
